@@ -1,0 +1,12 @@
+@use "font";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gyeonggi_Title_Medium", sans-serif;
+}
+
+body {
+  height: calc(var(--vh) * 100);
+}
