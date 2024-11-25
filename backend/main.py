@@ -1,13 +1,14 @@
 from typing import Annotated
 
-from fastapi import FastAPI, Form
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from database import get_song_data
 
 app = FastAPI()
 
 origins = [
     "http://localhost",
-    "http://localhost:5173",
+    "http://localhost:5173",  # vite server
 ]
 
 app.add_middleware(
@@ -25,5 +26,6 @@ def hello_world():
 
 
 @app.get("/search")
-def search(songname: Annotated[str, Form()]):
-    return {"songname": songname}
+def search(songname: str):
+    result = get_song_data(songname)
+    return result
