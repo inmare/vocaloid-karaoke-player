@@ -1,14 +1,4 @@
 {
   "editor.indentSize": "tabSize",
-  "editor.tabSize": 2,
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "xo.enable": true,
-  "xo.format.enable": true,
-  "[javascript]": {
-    "editor.defaultFormatter": "samverschueren.linter-xo"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "samverschueren.linter-xo"
-  }
+  "editor.tabSize": 2
 }

@@ -57,15 +57,3 @@
 // 		console.error('Error:', error);
 // 	});
 // });
-
-const form: HTMLFormElement = document.querySelector('#form')!;
-form.addEventListener('submit', async (event: Event) => {
-	event.preventDefault();
-
-	const formData = new FormData(this);
-
-	const response = await fetch('/api/search', {
-		method: 'POST',
-		body: formData,
-	});
-});
